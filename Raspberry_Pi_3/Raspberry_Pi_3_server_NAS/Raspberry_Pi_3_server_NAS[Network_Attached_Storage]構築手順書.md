@@ -84,8 +84,8 @@ sudo cp /etc/network/interfaces /etc/network/interfaces.org
 sudo leafpad /etc/dhcpcd.conf
 ```
 末尾に以下の意味の内容を追加してください(環境によって適宜変える箇所があるので注意)
-- interface eth0
-- interface eth0だと優先
+- interface wlan0
+- interface eth0だと有線
 - static ip_address=[設定したい固定IPアドレス]/24
 - static routers=[デフォルトゲートウェイのIPアドレス]
 - static domain_name_servers=[DNSサーバーのIPアドレス]
