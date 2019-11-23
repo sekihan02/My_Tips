@@ -5,6 +5,3 @@ pandas==0.23.4
 scipy==1.1.0
 scikit-learn==0.20.0
 matplotlib==3.0.1
-tensorflow==1.12.0
--e git+https://github.com/ntasfi/PyGame-Learning-Environment.git#egg=ple
--e git+https://github.com/lusob/gym-ple.git#egg=gym-ple

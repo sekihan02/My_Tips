@@ -14,7 +14,8 @@ activate my_env # Windows
 source activate my_env # Max/Linux
 
 ## 仮想環境に追加でインストール(バージョンを指定する場合conda install scipy=0.12.0など)
-conda install scikit-learn
+conda install tensorflow
+conda install keras
 
 ## condaで取得できないものについて、pipでインストール(仮想環境にpipを入れて対応)
 conda install pip
@@ -37,9 +38,6 @@ pandas==0.23.4
 scipy==1.1.0
 scikit-learn==0.20.0
 matplotlib==3.0.1
-tensorflow==1.12.0
--e git+https://github.com/ntasfi/PyGame-Learning-Environment.git#egg=ple
--e git+https://github.com/lusob/gym-ple.git#egg=gym-ple
 
 # 5. 仮想環境無効化
 deactivate # Windows
