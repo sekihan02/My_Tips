@@ -23,13 +23,13 @@ sudo reboot
 ```
 ###  2. ブラウザでアクセス
 http://***.***.***.***　（*はラズパイのIPアドレス）に
-ブラウザでアクセスすると、Apacheの画面が表示される
+ブラウザでアクセスすると、Apacheの画面が表示される。
 ![Apache_page](./img/page.JPG)
 
 このファイルは/var/www/html/にindex.htmlとしてあります。
 ###  3. テストページを簡易ブラウザに置き換える
 何も設定しないApacheは、
-/var/www/html/ディレクトリ内にあるファイルを表示する
+/var/www/html/ディレクトリ内にあるファイルを表示する。
 ただ、/var/www/html/index.htmlを普通に置き換えようとすると
 管理者権限が無くエラーになる。
 ###  4. アクセス権限を変更する
@@ -38,7 +38,7 @@ http://***.***.***.***　（*はラズパイのIPアドレス）に
 cd /var/www
 sudo chmod 777 html/
 ```
-これで全ユーザーがhtml/内でファイルの作成や編集できる
+これで全ユーザーがhtml/内でファイルの作成や編集ができる。
 WinSCPなどでindex.htmlファイル名をindex2.htmlに変更。
 ラズパイの./var/www/html/に
 test.htmlの中身を以下のように書き、ファイルを置き換える
@@ -75,7 +75,7 @@ htmlディレクトリの中に確認用のhtmlとして、
 ```
 sudo vi /etc/apache2/sites-available/000-default.conf
 ```
-※ vimがいやなら、VNCなどでsudo leafpad /etc/apache2/sites-available/000-default.confとして、テキストファイルを起動すると操作方法がわかりやすいと思う。
+※ vimがいやなら、VNCなどでsudo leafpad /etc/apache2/sites-available/000-default.confとして、テキストファイルを起動する操作方法がわかりやすいと思う。
 
 設定ファイルには、
 DocumentRoot /var/www/htmlが書かれているので、
